@@ -1,0 +1,286 @@
+12 dicas para evoluir como desenvolvedor Java!
+
+Por que aprender/codar Java?
+Java é uma linguagem já consolidada no mercado e possui documentação abrangente, além de uma comunidade ativa, e com modificações significativas para melhorias e segurança.
+
+Por possuir muitos desenvolvedores uma das linguagens de programação mais utilizadas no mundo.
+
+Porque encontramos Java em diferentes esferas de tecnologia e desenvolvimento: FrontEnd, Back-End, Mobile, Cloud .
+
+Por isso encontramos tantas vagas de emprego, seja aqui no Brasil ou no exterior, sempre em busca de profissionais capacitados e que realmente saibam programar em Java.
+
+Porém, quem chega pela primeira vez e olha e pensa como aprender Java e ainda pede ajuda, 
+
+Como posso me tornar um especialista em Java?
+
+É complexo aprender?
+
+Serei capaz de entender Java em pouco tempo?
+
+Onde encontrar bons livros e cursos para se tornar um excelente desenvolvedor em Java?
+
+Aprender Orientação a Objetos (OO \ POO) é difícil?
+
+Pois bem, sempre teremos dúvidas em relação a essas e muitas outras questões, hoje tentaremos responder algumas questões neste artigo com dicas que me ajudaram a tornar um desenvolvedor Java melhor e certamente ajudarão vocês que reservaram um tempo para ler este artigo.
+
+
+
+1: Estude o básico até entender o básico do idioma
+Essa dica é interessante, pois todos sabemos que, para aprender qualquer assunto, precisamos aprender os "conceitos básicos".
+
+Porém muita gente acaba pulando essa parte que é tão importante, lembre-se por mais que você conheça uma linguagem ou já programe é sempre necessário estudar os conceitos da língua e suas palavras reservadas .
+
+O Estudo de uma nova linguagem de programação e como se tivéssemos que aprender uma nova língua (ex. Francês, Hebraico, Árabe).
+
+Quando vamos aprender um novo idioma, sempre tentamos aprender coisas básicas, como gramática, pronomes e substantivos e adjetivos para depois, e colocamos essa parte em prática, então acrescentamos essa parte para poder aprender coisas mais avançadas sobre esse idioma, como concordância verbal, advérbios.
+
+Segue o mesmo princípio quando queremos aprender uma nova linguagem de programação .
+
+Não adianta querer aprender um novo framework/lib em Java, seja ele: Spring, Springboot ou Quarkus, se não sabemos a base do Java (Orientação a Objetos), não importa qual linguagem que você quer aprender segue o mesmo princípio estude primeiro os conceitos básicos.
+
+Não pule etapas nunca, aprender é como subir uma escada cada degrau tem seu valor, se pularmos os conceitos básicos, não entenderemos o escopo principal do idioma e consequentemente, não continuaremos com os estudos, ou teremos mais dificuldades técnicas na próxima etapa.
+
+Mas quais são os conceitos básicos em Java?
+
+Envolve aprender: variáveis, tipos de dados, funções, estruturas de loop (for, for in, while) — como e quando usar cada uma, estruturas de decisão, escopos locais e globais, entender estrutura de dados como array, lista e criar algoritmos conhecidos.
+
+Mas onde posso encontrar materiais para aprender esses conceitos básicos de Java?
+
+Um ótimo lugar para aprender sobre Java do básico ao avançado é a documentação oficial da Oracle , mas nem sempre ela tem a melhor didática.
+
+Tem pessoas que não conseguem aprender lendo ou não gostam de ler, mas preferem aprender por vídeo, recomendo alguns cursos:
+
+Loiane Grone - youtube
+
+DevDojo - youtube
+
+Nelio Alves - udemy
+
+
+2: Estude, entenda e pratique, aqui está um loop, Estude, entenda e pratique ...
+A melhor forma de você se tornar um especialista em alguma coisa, independente da área de atuação ou do idioma que está estudando, a melhor forma de se tornar um excelente profissional é praticando muito.
+
+Mas já tentei aprender Java e não consegui, é muito complicado, muitos têm domínio de lógica, mas para programar em Java não é só dominar a lógica e conceitos básicos sobre Java, é preciso aprender Orientação a Objetos (OO), muitos pulam essa etapa, e é necessário entender, conceitos sobre classe , herança, polimorfismo, abstração, Interfaces .
+
+Como estudar e praticar, hoje no aquecido mercado de trabalho na área de desenvolvimento, as empresas estão criando formas de se formar e buscar talentos ainda no início da jornada, com bootcamps e também como trainee, então esteja sempre estudando e fazendo cursos e bootcamps e inscreva-se também em programas empresariais, pois lá dentro você já será direcionado para um especialista que irá te ajudar no seu crescimento profissional.
+
+E estude intensamente Padrões de Projeto
+
+Os Padrões de Projeto GoF são divididos em três categorias:
+
+Criacional: Os padrões de design que tratam da criação de um objeto.
+
+Estrutural: Padrões de projeto nesta categoria lidam com a estrutura da classe, como Herança e Composição.
+
+Comportamental: Esse tipo de padrão de design fornece soluções para uma melhor interação entre objetos, como fornecer acoplamento frouxo e flexibilidade para estender facilmente no futuro.
+
+Padrões de design criacional
+Existem 5 padrões de design na categoria de padrões de design criacionais.
+
+Singleton : O padrão singleton restringe a inicialização de uma classe para garantir que apenas uma instância da classe possa ser criada.
+
+Factory: O padrão factory transfere a responsabilidade de instanciar um objeto de classe para uma classe Factory.
+
+Abstract Factory : Permite criar uma Factory para classes de fábrica.
+
+Builder : Criar um objeto passo a passo e um método para finalmente obter a instância do objeto.
+
+Prototype : Criar uma nova instância de objeto de outra instância similar e modificá-la de acordo com nossos requisitos.
+
+Padrões de design estrutural
+Existem 7 padrões de projeto estruturais definidos no livro de padrões de design Gangs of Four.
+
+Adapter: Fornece uma interface entre duas entidades não relacionadas para que possam trabalhar juntas.
+
+Composite: Usado quando temos que implementar uma hierarquia de parte-todo. Por exemplo, um diagrama composto por outras partes como círculo, quadrado, triângulo, etc.
+
+Proxy : Fornece um espaço reservado ou marcador de posição para outro objeto controlar o acesso a ele.
+
+Flyweight : Caching e reutilização de instâncias de objetos, usado com objetos imutáveis. Por exemplo, pool de strings.
+
+Facade: Criar interfaces de wrapper sobre interfaces existentes para ajudar aplicativos clientes.
+
+Bridge : O padrão de design bridge é usado para desacoplar interfaces da implementação e ocultar detalhes de implementação do programa cliente.
+
+Decorator: O padrão de design decorator é usado para modificar a funcionalidade de um objeto em tempo de execução.
+
+Padrões de Design Comportamentais
+Existem 11 padrões de design comportamentais definidos nos padrões de design GoF.
+
+Método de Template: usado para criar um stub de método de modelo e adiar algumas das etapas de implementação para subclasses.
+
+Mediador : usado para fornecer um meio centralizado de comunicação entre diferentes objetos em um sistema.
+
+Cadeia de Responsabilidade : Usada para obter acoplamento fraco no design de software, onde uma solicitação do cliente é passada para uma cadeia de objetos para processamento.
+
+Observador : útil quando você está interessado no estado de um objeto e deseja ser notificado sempre que houver alguma alteração.
+
+Estratégia : O padrão Estratégia é usado quando temos vários algoritmos para uma tarefa específica e o cliente decide a implementação real a ser usada em tempo de execução.
+
+Comando Comando : O padrão é usado para implementar o acoplamento fraco em um modelo de solicitação-resposta.
+
+Estado : O padrão de design Estado é usado quando um objeto muda seu comportamento com base em seu estado interno.
+
+Visitor O padrão Visitor é usado quando temos que realizar uma operação em um grupo de objetos de tipo semelhante.
+
+Intérprete : define uma representação gramatical para um idioma e fornece um intérprete para lidar com essa gramática.
+
+Iterador : usado para fornecer uma maneira padrão de iterar através de um grupo de objetos.
+
+Memento : O padrão de design memento é usado quando queremos salvar o estado de um objeto para que possamos restaurá-lo posteriormente.
+
+
+3: Estude Java com um livro, eu disse "um"
+Algumas pessoas não gostam de ler livros, parece totalmente chato para elas.
+
+O autor carrega no livro um ponto de vista e também uma forma direta que facilitou seu aprendizado, você pode fazer algo que eu chamo de sombra, que seria como imitar a fala em um curso de idiomas, aqui você terá o oportunidade de imitar a forma de programação do autor do livro, entender um ponto de vista que pode ou não ser parecido com o seu.
+
+Agora vem a dúvida qual livro escolher, essa resposta é novamente a resposta que mais se ouve de especialistas, "depende" ...
+
+Sim, mas atualmente temos livros excelentes e vários autores que tem uma didática excelente, poderia deixar uma lista aqui, mas só vou prestar atenção em dois, pois trazem a linguagem java a fundo e muito bem escritos, mas os dois são uma sequência.
+
+Java como programar - 10º edição - Paul Deitel, Harvey Deitel
+
+Java para Iniciantes: Crie, Compile e Execute Programas Java Rapidamente - Herbert Schildt
+
+Java - Guia do Programador: Atualizado Para Java 16 - Peter Jandl Junior
+
+Java efetivo: as melhores práticas para a plataforma Java - Joshua Bloch
+
+
+
+4: Entenda os genéricos como se não houvesse amanhã
+Por que estudar Generics? Simplesmente porque na Orientação a Objetos existe o conceito de reutilização, e quando criamos abstrações e interfaces, ou até mesmo programamos para a interface, ou quando trabalhamos com estruturas de dados (Coleções), a base desses conceitos é entender que algo pode ser Genérico, e pode ajudar o desenvolvedor a abstrair e obter o máximo da Orientação a Objetos.
+
+Lembrando que entender
+
+Lembrando que entender esses princípios pode ser aplicado a qualquer linguagem Orientada a Objetos, não especificamente ou apenas ao Java.
+
+Generics surgiram no Java 5 e trouxeram características interessantes para a reutilização de código. Agora, podemos criar uma única classe e, a partir dessa classe, instanciar objetos de tipos diferentes, de acordo com nossa escolha.
+
+Generics nasceu para resolver um problema de casting em Java.
+
+
+
+5: Estude coleções, até conhecer toda a hierarquia e utilização
+A base inteira das Coleções em Java (lista, fila, pilha, mapas), é criada com base em Generics, Herança e Interfaces, então ao dominar esses temas, torna-se mais simples entender e manipular dados usando as Coleções do Java.
+
+Mas qual seria essa hierarquia, ela começa na interface, itens no topo, e se especializa até chegar às classes concretas na base, cada uma com sua própria responsabilidade, e dentro delas temos métodos de manipulação de dados.
+
+Aqui a dica #2 Estudar, Entender e Praticar, torna-se ainda mais exigente, porque geralmente estaremos manipulando ou transportando dados e precisaremos fazer o mesmo.
+
+Eu considero como se fosse um trem com vários vagões, onde os colocamos, os transportamos, trocamos alguns vagões ou até mesmo os removemos e em outros pontos adicionamos, ou carregamos outros trens com a replicação de vagões ou apenas os removemos de um e movemos para outro trem, as possibilidades aqui são muitas.
+
+
+
+6: Crie seus projetos usando java – mãos à obra
+Sim, você chegou até aqui, parabéns, agora eu acredito que você será capaz de colocar a mão na massa.
+
+Mas não faça isso aleatoriamente, pense em um ou dois projetos, três ou mais, seja criativo mas defina objetivos.
+
+Exemplo: Eu quero aprender Coleções em Java, mas não tenho um banco de dados, crie um repositório, uma classe que carrega vários dados e serve como seu banco de dados e comece a manipular os dados em seu repositório, fazendo manipulações como listagem, filtragem, ordenação, busca por um identificador específico, criando predicados para filtrar os dados, percorrendo os dados via (for, stream, foreach), criando listas ou mapas com os dados, fazendo soma, média, mínimo e máximo, por um filtro específico.
+
+
+
+7: Suba de nível OOP, aprenda programação funcional em Java
+O processo de aprendizado é incrível e é como uma jornada, onde o mais legal não é apenas chegar aonde você quer, mas toda a jornada, cada passo, cada aprendizado, cada erro e sucesso moldam o seu hoje e você ainda está evoluindo, mas a cada degrau que você sobe, você se transforma.
+
+Aqui chegamos a um dos passos ou etapas que achei mais interessantes.
+
+A maioria dos programadores trabalha apenas com programação imperativa, que é um paradigma de programação de software que descreve a computação como ações, declarações ou comandos que alteram o estado (variáveis) de um programa, outros veem a programação de cima para baixo e a Orientação a Objetos, já transforma sua maneira de pensar, porque estaremos sempre trazendo o mundo real para o computacional, de forma que a herança e a programação para interfaces, reduzem a quantidade de código e no mesmo princípio facilita a manutenção, e agora deixamos um paradigma do desenvolvimento para a Programação Funcional.
+
+Mas o que é Programação Funcional?
+
+Programação Funcional é um paradigma de programação que trata a computação como uma avaliação de funções matemáticas e evita a alteração de estados ou dados.
+
+A programação funcional valoriza funções puras, ou seja, funções que não têm efeitos colaterais, que não dependem de nenhuma informação externa além de seus parâmetros. Funções puras nos dão a garantia de que sempre responderão de acordo com seus parâmetros.
+
+Em linguagens como Java, devemos prestar atenção e sempre valorizar essa regra, usando a palavra reservada final em variáveis e atributos de objetos e gerando novos resultados a partir das expressões.
+
+Em muitos casos, garantir a imutabilidade em Java pode ser um pouco de trabalho, existem bibliotecas que facilitam esse trabalho para nós, como o lombok (com a anotação @Value) ou a biblioteca immutables.
+
+A imutabilidade é importante novamente por ter processos paralelos, a garantia de que o estado dos dados da aplicação não mudará pode prevenir muitos erros.
+
+Mas aqui não é o contexto para explicar a Programação Funcional, mas para lhe dar a possibilidade e o caminho para estudá-la.
+
+
+
+8: Aprenda conceitos fora da linguagem com arquitetura (monolítica e microsserviço)
+Com a grande quantidade de acesso a uma aplicação, ou ela recebe um número de solicitações, ou até mesmo seu controle não pode ser síncrono, foi projetado pelos arquitetos de software, mecanismo, para trabalhar com essa quantidade de acessos simultâneos.
+
+Mas as equipes cresceram, as equipes ficaram maiores e também foram criados micro serviços, onde as funcionalidades foram separadas por projetos, então o monólito que era um projeto gigante tornou-se menor, e quando parou, apenas uma parte caiu, não afetando 100% do sistema.
+
+No entanto, uma regra do desenvolvimento de sistemas, toda indireção aumenta a dificuldade de entender a aplicação como um todo, ela precisa merecer existir, nesse caso, toda vez que tivermos fronteiras ou aumentarmos as camadas mais dificuldades de entendimento e desenvolvimento da aplicação serão geradas, exemplo, se criarmos micro serviços, teremos um problema relacionado aos dados, pois provavelmente teremos um banco de dados para cada aplicação.
+
+
+
+9: Aprenda uma estrutura/lib Java
+Quando falamos de Java e framework, o primeiro que nos vem à mente é o Spring e seu arsenal de soluções , outro que não fica atrás e lembraremos também do hibernate , base de dados do spring .
+
+Frameworks são fundamentais no sentido de ajudar, resolver problemas complexos que alguém já pensou na solução, esse ponto faz com que o desenvolvedor ganhe velocidade e também trabalhar com eles, a documentação e o ganho da comunidade já seriam benéficos, nem precisaríamos preste atenção à produtividade.
+
+Existem outros como Quarkus e micronault, jhisper e bibliotecas famosas como lombok, mapstruct. grails , aqui o Java se supera com as possibilidades que a Linguagem proporciona, eu poderia digitar dezenas de libs e mesmo assim ainda haveria excelentes que eu não conseguiria descrever.
+
+Mas no universo spring quero destacar alguns projetos que são excelentes, como spring-boot, spring-security, spring-data , spring-cloud e spring-web , quase todos os projetos essas libs estarão no pom. xml ou na grade. Mas um ponto para estudar aconselho maven .
+
+No caso do maven , você deve entender toda a sua estrutura, pois eu devo entender, a resposta é simples, pois 60% de todos os projetos são configurados com o gerenciador de repositório , você deve aprender com configuração de proxy, entender propriedades, inclusão de dependências, exclusão de bibliotecas que estão dentro de outras libs, como verificar a árvore de dependências de uma biblioteca, como funciona o ciclo de vida do maven , seus objetivos e Plug-ins e como ele se integra ao CI (Continuos Integration) e como configurar perfis e repositórios .
+
+
+
+10: Mestre SOLID
+No livro de Robert C. Martin, este livro vendeu mais cópias do que qualquer outro no mundo (devido a sua altissíma recomendação em qualquer lista que pedir na net sobre programação) Código Limpo.
+
+Mas esse livro é antigo sim, mas os assuntos desse livro não envelhecem, nesse livro ele trata de SOLID - Os 5 Princípios de OOP (Programação Orientada a Objetos).
+
+SRP — Princípio de Responsabilidade Única 
+
+OCP — Princípio Aberto-Fechado 
+
+LSP — Princípio de Substituição de Liskov 
+
+ISP — Princípio de Segregação de Interface 
+
+DIP — Princípio de Inversão de Dependência
+
+Lembrando que se você aplicar os três primeiros, os outros dois já estarão sendo observados.
+
+
+
+11: Aprenda testes unitários
+Alguns de vocês agora podem pensar: "Mas testes como esses me ajudarão a aprender Java?" Os testes têm uma função vital, como o próprio nome sugere, testar se um algoritmo se comporta conforme o esperado, sem possibilidade de ambiguidade ou mesmo que ocorra um erro que não tenha sido considerado pelo programador ou analista.
+
+No início, eu sempre me culpava por às vezes ter demandas que não seguiam como deveriam, ou por haver erros que eu não compreendia, conforme os deixava.
+
+O que pode ser melhorado neste código?
+
+O que o profissional de qualidade estaria pensando aqui agora?
+
+Essas práticas melhoraram muito minha vida e também a da equipe e, principalmente, a satisfação do cliente, pois havia uma taxa de erro muito baixa, e muito menos manutenção corretiva e o que é mais evidente, a facilidade de intervenções evolutivas.
+
+
+
+12: Explore o Github de desenvolvedores Java, sempre há algo para ajudá-lo
+Na dica "3. Estude Java com um Livro, eu disse um" , para uma pergunta eu levanto a sombra.
+
+Quando fiz meu curso superior sempre fui criticado por fazer isso, diziam que eu estava copiando, na maioria das vezes eu já tinha terminado meus algoritmos e queria ver se alguém pensava diferente do que eu estava fazendo, porque existem vários maneiras de pensar e resolver algo.
+
+Então agora pense em um ecossistema complexo como a Orientação a Objetos, existem N maneiras de pensar, estruturar e escrever códigos simples, não se aliene só do meu jeito, isso mesmo, eu me saí melhor.
+
+Quando você fizer algo legal ou estiver fazendo uma Prova de Conceito, carregue no github, pois você estará ajudando quem está começando, pois ao usar essa dica, ele estará aprendendo com seu projeto no github.
+
+Não armazene seu aprendizado diga às pessoas que você conhece aquele assunto, não só escrito em um currículo mas evidenciado por um projeto e o mais importante o github vai te mostrar sua evolução.
+
+Conclusão
+Vamos falar sobre Java, aquele assunto que sempre divide opiniões! Muitos dizem que é complicado, especialmente quando comparado com linguagens mais amigáveis para iniciantes, como Python. Mas, sabe de uma coisa? Quando você se aprofunda, percebe que Java não é tão assustador assim.
+
+Sabe aquele papo de Orientação a Objetos? Pois é, esse é o ponto crucial. A maioria não tem problemas com lógica ou desenvolvimento em si, mas sim em entender os conceitos de OOP.
+
+E olha só, as gigantes da tecnologia, como Netflix, Nasa World Wind, Minecraft, Spotify e IBM, todas usam Java em seus sistemas. Não é demais?
+
+Então, minha dica para quem quer entrar nessa área é simples: estude, se dedique e seja paciente. Com determinação e habilidade, você vai longe! E logo estará em grandes empresas, trabalhando com equipes incríveis e garantindo uma ótima qualidade de vida.
+
+
+
+Bora codificar! 🚀
+
+Fernando Gabriel (Dev Samurai)

@@ -1,0 +1,65 @@
+Boas práticas de mocking em aplicações Java
+
+Como efetivamente incorporar simulação em seus testes unitários
+
+Mocking (simulação) é uma parte crucial dos testes unitários de componentes que possuem integrações ou dependências externas. Mas o que ela realmente significa? Nos testes, mocking utiliza objetos simulados com lógica de negócios falsa para reproduzir a função de um objeto real, isolando e focando no código sendo testado sem ser influenciado pelo comportamento ou estado das dependências externas.
+
+Mocks (simulações) podem melhorar os testes ao reduzir fatores que poderiam causar falhas (como a necessidade de acessar um recurso externo como um banco de dados, que poderia estar offline por razões não relacionadas ao teste) e ao ajudar a isolar as classes sendo testadas. Elas também podem economizar tempo e evitar custos associados ao acesso a esses recursos externos.
+
+Pode-se ter demais? 
+
+Saber usar mocks adequadamente é crucial, o que requer um entendimento profundo do código e seu comportamento previsto; idealmente, os mocks devem ser usadas apenas quando necessários. Entretanto, novos desenvolvedores de teste às vezes exageram, o que pode resultar em testes mais lentos e desnecessariamente complicados. O uso excessivo de mocks pode até mesmo afetar se você está testando a coisa certa — você está testando se algo está implementado de uma maneira específica, ao invés de testar o resultado desejado?
+
+Aqui estão algumas das melhores práticas para mocks para ajudá-lo a usar este método da forma mais eficaz possível.
+
+Quando mcok não é apropriado? 
+
+Mocks funcionam melhor quando o código sendo testado não está fortemente acoplado; código desacoplado tende a ser resultado do Desenvolvimento Orientado a Testes (TDD), o que parcialmente explica por que a simulação é incentivada na comunidade de TDD. Para código fortemente acoplado (como frequentemente encontrado em código legado), pode ser que duas ou mais classes formem uma unidade, ainda assim testável com um teste unitário. Caso contrário, considere se a classe emparelhada possui muita lógica própria e se é importante testá-la separadamente. Se não, não faça um mock para ela.
+
+Da mesma forma, não simule objetos de valor; não há motivo para isso, uma vez que eles não possuem lógica própria. Evite também simular classes concretas, pois isso o prende a uma implementação específica da classe que está sendo "mockada".
+
+Em alguns casos, diferentes tipos de "dobradores de teste" semelhantes a simulações podem ser mais apropriados. Para uma discussão mais detalhada sobre as diferenças e aplicações entre mocks, stubs, fakes, dummies e outros dobradores de teste, consulte o artigo clássico de Martin Fowler sobre o assunto.
+
+Qual framework de teste é adequado para você? 
+
+Frameworks de teste unitário em Java consistem em uma vasta coleção de pacotes que fornecem código pré-escrito. Eles normalmente incluem bibliotecas, compiladores, ferramentas e APIs, oferecendo aos desenvolvedores uma maneira consistente, inteligente e extensível de construir software. A escolha dependerá de vários fatores, incluindo a aplicação e a tecnologia sendo testadas, requisitos de teste e habilidades da equipe, sendo o mais popular o JUnit.
+
+Qual framework de simulação é adequado para você? 
+
+Você pode escrever mocks manualmente, mas alguns frameworks de simulação de código aberto tornam isso muito mais rápido e fácil de manter, especialmente se você escrever testes com frequência (o que deveria!).
+
+Muitos frameworks de simulação para código Java funcionam em conjunto com o JUnit e outros frameworks de teste unitário populares, sendo excelentes dependendo de suas necessidades específicas. Dois dos mais amplamente utilizados são o Mockito e o PowerMock. O Mockito é útil para todos, exceto nos casos mais complexos, para os quais você pode usar o PowerMock. Felizmente, esses frameworks são compatíveis entre si, permitindo que você comece com o Mockito para a maioria das simulações e mude para o PowerMock para os casos mais complexos.
+
+Use ArgumentCaptor para argumentos complexos:
+
+Se a sua classe em teste interage com o mock usando argumentos complexos, considere usar o ArgumentCaptor do Mockito.
+
+O ArgumentCaptor permite capturar o argumento real passado para um método do mock, permitindo verificações mais flexíveis.
+
+Evite usar reset() com cautela:
+
+O método reset() do Mockito redefine as expectativas de um mock para o estado padrão.
+
+Evite usar reset() em cada teste, pois isso pode tornar seus testes frágeis e difíceis de entender.
+
+Considere usar cenários de teste separados ou a anotação @Before para criar um novo mock para cada teste.
+
+Em resumo, para incorporar as melhores práticas de simulação: 
+
+Refine suas técnicas de teste unitário 
+
+Escolha um framework de teste 
+
+Escolha um framework de simulação
+
+A anotação @Mock cria um objeto mock, enquanto @InjectMocks injeta automaticamente mocks em uma classe de teste.
+
+Mas lembre-se, menos é mais! 
+
+Este método poderoso requer apenas um toque leve e pode ajudá-lo a escrever testes unitários eficazes e código limpo e ágil. Com as ferramentas certas e a aplicação cuidadosa dessas técnicas, você estará realizando simulações com estilo.
+
+
+
+Bora codificar! 🚀
+
+Fernando Gabriel (Dev Samurai)

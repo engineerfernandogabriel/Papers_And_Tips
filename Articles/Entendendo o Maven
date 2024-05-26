@@ -1,0 +1,151 @@
+Entendendo o Maven
+
+Como desenvolvedor Java, você provavelmente já ouviu falar muito sobre o Maven ao longo da sua carreira. Mas afinal, o que é o Maven e qual é o seu papel? Neste artigo, vamos explorar alguns conceitos importantes sobre o Maven e examinar suas aplicações na automação.
+Então, o que é o Apache Maven?
+Conforme indicado no site https://maven.apache.org/, o Apache Maven atua como uma ferramenta de gerenciamento e compreensão de projetos de software. Utilizando o conceito de um modelo de objeto de projeto (POM), o Maven facilita o gerenciamento do processo de construção, relatórios e documentação de um projeto a partir de uma fonte centralizada de informações.
+Ao olharmos de forma mais abrangente para o Apache Maven:
+Funciona como uma ferramenta de gerenciamento de projeto centrada em um modelo de objeto de projeto.
+Segue um conjunto de padrões.
+Adere a um ciclo de vida do projeto.
+Inclui um sistema de gerenciamento de dependências.
+Emprega lógica para executar metas de plugins em várias fases do ciclo de vida do projeto.
+Com esses recursos, o Maven possibilita configurações de projetos simples que seguem as melhores práticas. Ao utilizar o Maven, os projetos podem manter uma estrutura consistente independente de IDEs específicos. Além disso, uma das funções mais cruciais do Maven é simplificar a declaração de dependências do projeto.
+Aprofundando este aspecto, ao desenvolver uma aplicação Java tradicional, gerenciar dependências geralmente envolve o download e a incorporação manual delas na estrutura do projeto. Esse processo pode ser trabalhoso e propenso a erros. Além disso, acompanhar as versões das dependências é essencial para a estabilidade do projeto. É aqui que o Maven se mostra inestimável. Ele não apenas rastreia dependências e suas versões, mas também as baixa automaticamente quando necessário para construir o projeto.
+O Maven realiza isso por meio de um arquivo dedicado conhecido como pom.xml, simplificando significativamente o gerenciamento de dependências do projeto.
+Instalando o Maven
+Para começar a usar o Apache Maven, visite https://maven.apache.org/ e selecione o link para Download. Você o encontrará tanto no painel lateral quanto na seção Download, Instalação, Execução do Maven no conteúdo.
+
+Página inicial do Maven
+
+Quando você clicar nesse link, será direcionado para a página de downloads, onde encontrará os requisitos do sistema para o Maven (Sempre tente baixar a versão mais recente do Maven). O requisito mais importante aqui é a versão do JDK. Atualmente, a versão mais recente do Maven é a 3.9.6 e a versão do JDK necessária para isso é a JDK 1.8.
+
+Requisitos para instalar o Maven
+
+Ao rolar para baixo, você encontrará as instruções de instalação e os arquivos para download. Neste ponto, vamos selecionar o arquivo apache-maven-3.9.6-bin.zip e revisar as instruções de instalação posteriormente.
+
+Download Maven 3.9.6
+
+Agora vá para a página de instruções de instalação. Lá, você encontrará as orientações sobre como instalar o Apache Maven em sua máquina local.
+
+Link para a página de instruções de instalação
+
+Página de instruções de instalação
+
+Conforme as instruções, primeiro, descompacte o arquivo zip baixado. Após descompactar o arquivo, você terá um diretório chamado apache-maven-3.9.6. 
+Aqui, vamos ver como instalar isso em um computador com Windows.
+Crie um diretório (pasta) "maven" em C:\Program Files (C:\Arquivos de Programas). 
+Copie ou recorte o arquivo descompactado apache-maven-3.9.6 e cole dentro do diretório maven criado no C:.
+Digite "variáveis de ambiente" na pesquisa do Windows na sua barra de tarefas e abra para editar as variáveis de ambiente do sistema.
+Clique em "Variáveis de Ambiente" e depois em "Novo" em Variáveis do Sistema. Para o nome da variável, insira MAVEN_HOME e, para o valor, insira o caminho do diretório que criou (C:\Program Files\maven\apache-maven-3.9.6).
+Em seguida, selecione a variável Path em Variáveis do Sistema e clique em Editar. Depois, clique em Novo na janela que aparecer e digite %MAVEN_HOME%\bin. Em seguida, clique em OK.
+
+Telas de configurações de variáveis de ambiente
+
+Agora você pode abrir o prompt de comando e digitar "mvn -v" para verificar se o Maven foi adicionado ao seu caminho ou não.
+
+prompt com a versão do maven
+
+Eu já instalei o Java e o adicionei ao caminho. Você pode instalar o Oracle JDK ou o Open JDK para o Java e configurá-lo na variável de caminho definindo uma nova variável JAVA_HOME, conforme discutimos anteriormente. Você pode verificar se as variáveis estão funcionando digitando echo %JAVA_HOME% e echo %MAVEN_HOME% no seu prompt de comando.
+
+Entendendo Maven - POM
+Como mencionado anteriormente, o Maven trabalha com um modelo de objeto de projeto ou POM. De acordo com o Github, "Introduzindo o Apache Maven",
+POM significa Project Object Model. Este modelo possui um conjunto de padrões, um ciclo de vida do projeto, um sistema de gerenciamento de dependências e uma lógica para executar metas de plugins em fases definidas em um ciclo de vida.
+Ao criar um projeto Java usando o Maven, podem ser observadas as seguintes características.
+Os projetos são configurados com comportamentos padrão. 
+O código fonte deve estar na pasta src/main. 
+Os recursos necessários para o projeto estão em outra pasta. 
+Os casos de teste estão em uma pasta especificamente nomeada. 
+A pasta alvo é usada para o arquivo JAR final.
+Vamos analisar a estrutura de um projeto e ter uma ideia básica sobre o Maven e o arquivo POM.
+
+Entendendo Maven - Demonstração de Amostra 
+Para ter uma ideia básica sobre o Maven, vamos criar um projeto Maven simples usando o inicializador do Spring. Você pode usar um IDE como o IntelliJ, VSCode Studio ou usar o site start.spring.io. Aqui, usarei o site start.spring.io, já que o Maven é independente do IDE.
+
+
+Aqui, você pode ver que para o nome do artefato, escolhemos "example-maven" e selecionei o Java 17 para a versão do Java, Spring 3.2.5. Para as dependências, adicionei Spring Web, Spring Data JPA, Lombok e Rest Repositories. Agora, clique no botão Gerar e um arquivo zip será baixado. Extraia o arquivo zip e abra-o usando um IDE de sua preferência. Eu vou usar o IntelliJ e vou abrir usando o arquivo pom.xml.
+Levará alguns segundos para sincronizar e depois disso, você poderá ver a seguinte estrutura de projeto.
+
+Intellij com o arquivo gerado pelo spring inicializador aberto
+Aqui, no arquivo pom.xml aberto, você pode ver as especificações que você definiu durante a inicialização do projeto no inicializador do Spring.
+
+Entendendo Maven - Ciclo de Vida do Maven 
+Se você abrir o botão do menu lateral chamado Maven, poderá ver as fases no Ciclo de Vida do Maven. Existem nove fases importantes no Ciclo de Vida do Maven.
+
+Janela com o lifeCycle do maven aberta
+
+clean - limpa o diretório target onde o Maven normalmente constrói seu projeto 
+validate - valida se o projeto está correto 
+compile - compila o código-fonte do projeto 
+test - testa o código-fonte compilado usando um framework de teste unitário 
+package - empacota o código compilado 
+verify - executa verificações para garantir que o pacote seja válido 
+install - instala o pacote no repositório local 
+deploy - copia o pacote final para um repositório remoto 
+integration-test (não neste projeto) - implanta o pacote em um ambiente onde os testes de integração podem ser executados
+Como os objetivos do plugin podem ser associados a cada fase do ciclo de vida, o Maven executa os objetivos associados a cada fase. E uma fase pode ter zero ou mais objetivos. Por exemplo, se você abrir o terminal dentro do IDE e digitar mvn install, vários objetivos serão executados. Por enquanto, vamos pular a fase de testes e executar o Maven dentro do nosso IDE. Para fazer isso, abra o terminal e digite "mvn clean install -DskipTests".
+
+Tela com sucesso de build
+Quando você executa isso, perceberá que todas as dependências mencionadas no arquivo pom.xml são baixadas para o seu projeto e o projeto é agrupado em um arquivo .jar (na pasta target).
+Você pode encontrar o arquivo agrupado na pasta target, bem como na pasta .m2. Você pode acessar a pasta .m2 indo para C:\Usuários\<NOME_DO_USUÁRIO>\.m2
+
+Entendendo Maven - Repositórios Maven 
+Quando se trata do Maven, existem dois repositórios: o Repositório Central do Maven e o repositório local .m2.
+Olhando para o Repositório Central do Maven, você pode visitar o site usando o search.maven.org, mvnrepository.com. É o repositório que contém todas as dependências mencionadas no arquivo pom.xml.
+
+Tela inicial search maven
+
+Tela inicial mvnrepository
+E o repositório .m2 é o repositório local que está em sua máquina local. Portanto, quando você executa o comando mvn clean install, que executamos anteriormente, a máquina local se conecta ao Maven Central e baixa todas as dependências mencionadas no arquivo pom.xml para o seu repositório .m2 local. E após isso, essas dependências são adicionadas à pasta de Bibliotecas Externas em seu projeto, resolvendo assim o problema do gerenciamento de dependências.
+
+Entendendo o pom.xml 
+Como mencionamos acima, o arquivo pom.xml contém todas as informações sobre um projeto. Mesmo que você não tenha adicionado nenhuma dependência, você pode criar o arquivo pom.xml e adicionar suas dependências posteriormente. O arquivo pom.xml mais simples que você pode ter parece com isso.
+
+arquivo pom.xml inicial simples
+Os elementos <groupId></groupId>, <artifactId></artifactId> e <version></version> formam o projeto. Portanto, eles são essenciais ao criar um projeto Maven. Frequentemente, esses elementos são mencionados como coordenadas do projeto.
+O arquivo pom.xml é um arquivo XML (Extensible Markup Language) que tem uma sintaxe semelhante ao HTML. E se você tiver vários projetos dentro de um projeto Maven, todos esses projetos estendem automaticamente o super POM.
+Quando você está adicionando dependências ao seu arquivo pom.xml, você precisa adicioná-las ao grupo nomeado <dependencies></dependencies>. Um exemplo simples disso é mostrado abaixo
+
+exemplo de inserção de dependências dentro do pom
+Ao usar dependências, você pode usar a tag <scope></scope> para definir o escopo no qual deseja que essa dependência seja executada. Por exemplo, a dependência do JUnit pode ter <scope>test</scope> pois pode ser usada para a fase de teste. Existem outros escopos como compile, provided, runtime e system.
+compile - escopo padrão 
+provided - quando é esperado que o JDK as forneça 
+runtime - para execução e teste, não para compilação 
+test - durante os testes, não necessário durante a operação normal 
+system - similar a "provided", mas é necessário especificar o caminho explícito para o JAR em um sistema de arquivos local 
+Para aprender mais detalhadamente sobre os escopos, leia o artigo:
+https://howtodoinjava.com/maven/maven-dependency-scopes/
+
+Agora, vamos dar uma olhada nos plugins do Maven. Um plugin é uma coleção de um ou mais objetivos e um objetivo é uma unidade de trabalho no Maven. Existem muitos plugins principais como o plugin JAR, Plugin do Compilador, Plugin Surefire, etc. Além disso, o Maven permite que os usuários criem plugins personalizados também. Para ver a lista completa dos plugins principais, acesse https://maven.apache.org/plugins/index.html
+Por exemplo, para utilizar o plugin do compilador, você pode digitar mvn compiler:compile. Aqui, compile é o objetivo fornecido.
+
+Build succes do comando compiler
+
+CONCLUSÃO
+Em suma, o arquivo pom.xml do Maven é o coração de qualquer projeto Maven, pois contém todas as configurações e informações necessárias para construir e gerenciar o projeto de forma eficiente. Através do POM, podemos definir dependências, plugins, perfis e muitos outros aspectos fundamentais do projeto. Dominar o pom.xml é essencial para maximizar a produtividade e facilitar o desenvolvimento de software utilizando o Maven. Com uma compreensão sólida do POM e suas nuances, os desenvolvedores podem garantir uma construção consistente e confiável de seus projetos, adaptando-se às necessidades específicas de cada projeto.
+1. Estrutura Básica:
+project: Define informações gerais do projeto, como groupId, artifactId, version, e packaging.
+dependencies: Lista as dependências externas necessárias para o projeto funcionar (bibliotecas, frameworks, etc.).
+repositories: Define repositórios remotos de onde o Maven baixa as dependências.
+build: Configura o processo de compilação, empacotamento e testes do projeto.
+profiles: (Opcional) Permite definir configurações alternativas para diferentes ambientes (dev, teste, produção).
+2. Gerenciamento de Dependências:
+A seção dependencies lista as dependências necessárias para o projeto.
+Cada dependência é declarada com elementos como groupId, artifactId, e version.
+O Maven baixa automaticamente as dependências declaradas de repositórios centrais como o Maven Central.
+É importante especificar versões compatíveis das dependências para evitar conflitos.
+3. Ciclo de Vida do Projeto:
+O pom.xml define o ciclo de vida do projeto Maven, que especifica comandos para tarefas específicas: mvn clean: Limpa o diretório de saída do projeto. mvn compile: Compila o código fonte do projeto. mvn test: Executa os testes de unidade do projeto. mvn package: Empacota o projeto em um artefato (por exemplo, JAR).
+Você pode encontrar a lista completa de comandos do ciclo de vida na documentação do Maven.
+4. Melhores Práticas:
+Organize as dependências: Utilize sub-seções como compile e test para organizar dependências usadas em diferentes fases do ciclo de vida.
+Documentação: Inclua uma seção description para descrever brevemente o projeto.
+Propriedades: Use propriedades para valores reutilizáveis (e.g., versão do projeto) para facilitar a manutenção do pom.xml.
+Plugins: O pom.xml permite configurar plugins do Maven para tarefas adicionais (geração de documentação, análise estática de código).
+5. Recursos para Aprender Mais:
+Documentação Oficial do Maven: https://maven.apache.org/guides/index.html
+Maven Tutorial: https://www.baeldung.com/maven-guide
+Exemplos de pom.xml: https://maven.apache.org/pom.html
+Seguindo essas dicas, você poderá criar pom.xmls eficientes e fáceis de gerenciar para seus projetos Maven.
+
+Bora codificar! 🚀
+Fernando Gabriel (Dev Samurai)
